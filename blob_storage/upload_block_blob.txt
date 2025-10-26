@@ -1,0 +1,9 @@
+Upload a block blob
+Block blobs are used for storing text and binary data in the cloud, like files, images, and videos.
+
+Azure portal, Resource Type: Storage Account
+Data Storage - Containers - Uploads
+Create new - hrdoc
+	Anonymous access level - Private
+Upload
+	
