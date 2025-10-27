@@ -10,7 +10,7 @@
 	azure.cosmos.responseDiagnosticsEnabled=true
 
 ### Use Lombok 
-	The built-in extension "Extension Pack for Java" is already installed
+    The built-in extension "Extension Pack for Java" is already installed
 
 ### Run
 	java -jar target/users-api-0.0.1-SNAPSHOT.jar
@@ -36,10 +36,10 @@
 https://localhost:8081/_explorer/index.html
 
 ### SSL cert
-keytool -printcert -sslserver localhost:8081 -rfc > cosmosdb-local.crt
-Copy java cacerts to ./truststore/
-keytool -importcert -alias cosmosdb-local -file cosmosdb-local.crt -trustcacerts -keystore truststore/cacerts -storepass changeit
-Add VM option in Visual Studio Code:
-View - Run - create launch.json - Java - Java: Launch Program in current file
-"vmArgs": "-Djavax.net.ssl.trustStore=C:/cosmosdb-springboot-aks/truststore/cacerts -Djavax.net.ssl.trustStorePassword=changeit"
+keytool -printcert -sslserver localhost:8081 -rfc > cosmosdb-local.crt  
+Copy java cacerts to ./truststore/  
+keytool -importcert -alias cosmosdb-local -file cosmosdb-local.crt -trustcacerts -keystore truststore/cacerts -storepass changeit  
+Add VM option in Visual Studio Code:  
+View - Run - create launch.json - Java - Java: Launch Program in current file  
+"vmArgs": "-Djavax.net.ssl.trustStore=C:/cosmosdb-springboot-aks/truststore/cacerts -Djavax.net.ssl.trustStorePassword=changeit"  
 
